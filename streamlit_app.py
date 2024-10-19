@@ -12,7 +12,7 @@ def run_app():
                 if output:
                     st.session_state.console_output += output
 
-        pty.spawn(['./sshx'], read)
+        pty.spawn(['./sshx'])
 
     spawn_and_read()
 
